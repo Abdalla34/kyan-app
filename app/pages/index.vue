@@ -27,12 +27,12 @@ import Arrow from '~/components/icons/Arrow.vue';
                     </div>
                 </div>
             </div>
-            <!-- <div class="position-absolute wave">
-                <IconsWave/>
-            </div> -->
+            <div class="position-absolute wave">
+                <IconsWave />
+            </div>
         </div>
         <!-- choosing sec -->
-        <div class="choose-kyan">
+        <div class="choose-kyan margin-top-section">
             <div class="container">
                 <div class="titl-note d-flex justify-content-between align-items-center">
                     <div class="animation-top-Arrow d-flex justify-content-start align-items-center gap-4">
@@ -78,8 +78,9 @@ import Arrow from '~/components/icons/Arrow.vue';
 .section-one {
     background: linear-gradient(180deg, #fafdff 14.728%, #c3eaf9);
     top: -40px;
-    /* min-height: calc(100vh - 80px); */
-    min-height: 100vh;
+    min-height: 90vh;
+    /* min-height: calc(90vh - 80px); */
+    /* min-height: 100vh; */
 }
 
 .image img {
@@ -87,16 +88,16 @@ import Arrow from '~/components/icons/Arrow.vue';
 }
 
 .wave {
-    bottom: -100px;
+    bottom: -90px;
     left: 0;
     width: 100%;
 }
 
 .wave svg path {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     display: block;
-    fill: rgb(19 135 179 / var(--tw-text-opacity, 1));
+
 }
 
 @media (max-width: 767px) {
@@ -148,14 +149,17 @@ import Arrow from '~/components/icons/Arrow.vue';
     -webkit-mask-image: url('/mask-1.svg');
     mask-image: url('/mask-1.svg');
 }
+
 .mask-2 img {
     -webkit-mask-image: url('/mask-2.svg');
     mask-image: url('/mask-2.svg');
 }
+
 .mask-3 img {
     -webkit-mask-image: url('/mask-3.svg');
     mask-image: url('/mask-3.svg');
 }
+
 .mask-4 img {
     -webkit-mask-image: url('/mask-4.svg');
     mask-image: url('/mask-4.svg');
