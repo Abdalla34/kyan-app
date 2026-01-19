@@ -1,0 +1,71 @@
+.mask {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mask-1 img {
+    -webkit-mask-image: url('/mask-1.svg');
+    mask-image: url('/mask-1.svg');
+}
+
+.mask-2 img {
+    -webkit-mask-image: url('/mask-2.svg');
+    mask-image: url('/mask-2.svg');
+}
+
+.mask-3 img {
+    -webkit-mask-image: url('/mask-3.svg');
+    mask-image: url('/mask-3.svg');
+}
+
+.mask-4 img {
+    -webkit-mask-image: url('/mask-4.svg');
+    mask-image: url('/mask-4.svg');
+}
+
+.image-box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-imge {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
+@media (max-width: 768px) {
+    .titl-note {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .animation-top-Arrow {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .paragraph-sec {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .mini-title-sec {
+        text-align: center !important;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .p-imge {
+        font-size: 13px;
+    }
+    .choose-kyan{
+        padding: 0px;
+    }
+}

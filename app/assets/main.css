@@ -3,7 +3,7 @@
 }
 
 :root {
-    --main-color: rgb(19 135 179 / var(--tw-text-opacity, 1));
+    --main-color: rgb(8, 116, 158);
     --second-color-bg: linear-gradient(90deg, #0d607f, #1387b3);
 }
 
@@ -77,5 +77,10 @@ a {
     text-decoration: none;
 }
 .margin-top-section{
-    margin-top: 80px;
+    margin-top: 120px;
+}
+@media (max-width:768px) {
+    .margin-top-section{
+        margin-top: 40px;
+    }
 }

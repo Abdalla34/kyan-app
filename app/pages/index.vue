@@ -32,142 +32,70 @@ import Arrow from '~/components/icons/Arrow.vue';
             </div>
         </div>
         <!-- choosing sec -->
-        <div class="choose-kyan margin-top-section">
+        <div class="choose-kyan margin-top-section pt-5">
             <div class="container">
+                <!-- Title Section -->
                 <div class="titl-note d-flex justify-content-between align-items-center">
                     <div class="animation-top-Arrow d-flex justify-content-start align-items-center gap-4">
-                        <p class="paragraph-sec w-50 text-end">نحن نهتم بأدق التفاصيل لضمان تجربة فريدة لطفلك تجمع بين
-                            المتعة والتعلم
-                            والأمان</p>
+                        <p class="paragraph-sec w-50 text-end">
+                            نحن نهتم بأدق التفاصيل لضمان تجربة فريدة لطفلك تجمع بين
+                            المتعة والتعلم والأمان
+                        </p>
                         <div class="Arrow">
                             <Arrow />
                         </div>
                     </div>
+
                     <div class="mini-title-sec text-end">
                         <h5>لماذا تختار كيان؟</h5>
-                        <h1 class="title">مميزات تجعلنا <span class="span-title">الأفضل</span> </h1>
+                        <h1 class="title">
+                            مميزات تجعلنا <span class="span-title">الأفضل</span>
+                        </h1>
                     </div>
                 </div>
-                <div class="row mt-5 flex-row-reverse">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="mask mask-1">
+
+                <!-- Boxes -->
+                <div class="row mt-5 flex-row-reverse text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 box-item">
+                        <div class="mask mask-1 mx-auto">
                             <img src="/box-1.webp" alt="" class="image-box">
                         </div>
+                        <h4 class="title fs-5 mt-3">رعاية شاملة</h4>
+                        <p class="p-imge">بيئة آمنة وصحية تضمن راحة طفلك واطمئنانك</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="mask mask-2">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 box-item">
+                        <div class="mask mask-2 mx-auto">
                             <img src="/box-2.webp" alt="" class="image-box">
                         </div>
+                        <h4 class="title fs-5 mt-3">تعليم ترفيهي</h4>
+                        <p class="p-imge">مناهج تعليمية مبتكرة تمزج بين المتعة والفائدة</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="mask mask-3">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 box-item">
+                        <div class="mask mask-3 mx-auto">
                             <img src="/box-3.webp" alt="" class="image-box">
                         </div>
+                        <h4 class="title fs-5 mt-3">تنمية مهارات</h4>
+                        <p class="p-imge">برامج متخصصة لتطوير القدرات الذهنية والحركية</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="mask mask-4">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 box-item">
+                        <div class="mask mask-4 mx-auto">
                             <img src="/box-4.webp" alt="" class="image-box">
                         </div>
+                        <h4 class="title fs-5 mt-3 ">تغذية صحية</h4>
+                        <p class="p-imge">وجبات متوازنة ومتابعة دقيقة لصحة الطفل</p>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 <style scoped>
-.section-one {
-    background: linear-gradient(180deg, #fafdff 14.728%, #c3eaf9);
-    top: -40px;
-    min-height: 90vh;
-    /* min-height: calc(90vh - 80px); */
-    /* min-height: 100vh; */
-}
+@import "assets/pages/section-main.css";
 
-.image img {
-    max-width: 100%;
-}
-
-.wave {
-    bottom: -90px;
-    left: 0;
-    width: 100%;
-}
-
-.wave svg path {
-    /* width: 100%; */
-    height: auto;
-    display: block;
-
-}
-
-@media (max-width: 767px) {
-    .section-one {
-        min-height: auto;
-        /* ارتفاع طبيعي حسب المحتوى */
-        margin-top: 100px;
-    }
-
-    .row.align-items-center {
-        flex-direction: column-reverse;
-        /* الصورة تحت النص */
-        text-align: center;
-        /* النص في النص بدل text-end */
-    }
-
-    .details.text-end {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .wave {
-        bottom: -50px;
-    }
-
-    .title {
-        font-size: 1.6rem;
-    }
-
-    .span-title {
-        display: block;
-    }
-
-    .paragraph-sec {
-        font-size: 0.95rem;
-        line-height: 1.5rem;
-    }
-}
-
-/* ////////////// sec chooose */
-.mask {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-
-.mask-1 img {
-    -webkit-mask-image: url('/mask-1.svg');
-    mask-image: url('/mask-1.svg');
-}
-
-.mask-2 img {
-    -webkit-mask-image: url('/mask-2.svg');
-    mask-image: url('/mask-2.svg');
-}
-
-.mask-3 img {
-    -webkit-mask-image: url('/mask-3.svg');
-    mask-image: url('/mask-3.svg');
-}
-
-.mask-4 img {
-    -webkit-mask-image: url('/mask-4.svg');
-    mask-image: url('/mask-4.svg');
-}
-
-.image-box {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/*  sec chooose */
+@import "assets/pages/choosing-kayan.css";
 </style>

@@ -1,0 +1,62 @@
+.section-one {
+    background: linear-gradient(180deg, #fafdff 14.728%, #c3eaf9);
+    top: -40px;
+    min-height: 85vh;
+    /* min-height: calc(90vh - 80px); */
+    /* min-height: 100vh; */
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.wave {
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    color: #c6edfc;
+}
+
+.wave svg path {
+    /* width: 100%; */
+    height: auto;
+    display: block;
+
+}
+
+@media (max-width: 767px) {
+    .section-one {
+        min-height: auto;
+        /* ارتفاع طبيعي حسب المحتوى */
+        margin-top: 100px;
+    }
+
+    .row.align-items-center {
+        flex-direction: column-reverse;
+        /* الصورة تحت النص */
+        text-align: center;
+        /* النص في النص بدل text-end */
+    }
+
+    .details.text-end {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .wave {
+        bottom: -16px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .span-title {
+        display: block;
+    }
+
+    .paragraph-sec {
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+    }
+}
