@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import Arrow from '~/components/icons/Arrow.vue';
-
-</script>
-
 <template>
     <div class="main">
         <!-- image sec -->
@@ -90,12 +85,176 @@ import Arrow from '~/components/icons/Arrow.vue';
                 </div>
             </div>
         </div>
+        <!-- round section in center -->
+        <div class="round-sec mb-5 ">
+            <WaveUp />
+            <div class="container p-5">
+                <div class="mini-title-sec mb-4 text-center">
+                    <h5>لماذا تختار كيان؟</h5>
+                    <h1 class="title">
+                        أركان تعليمية أركان تعليمية <span class="span-title">متطورة</span>
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
 
+                            <div class="swiper-slide">
+                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-1">
+                                    <img src="/arts-corner.webp" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-2">
+                                    <img src="/cooking-corner.webp" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-3">
+                                    <img src="/corner-theater.webp" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-4">
+                                    <img src="/learning-corner.webp" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-5">
+                                    <img src="/ports-club.webp" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-6">
+                                    <img src="/skills-corner.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-rotate">
+                <waveDown />
+            </div>
+        </div>
     </div>
 </template>
+<script setup>
+import Swiper from 'swiper/bundle'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import Wave from '~/components/icons/wave.vue'
+import WaveDown from '~/components/icons/waveDown.vue'
+import WaveUp from '~/components/icons/waveUp.vue'
+onMounted(() => {
+    new Swiper('.mySwiper', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
+            },
+        },
+    })
+})
+
+</script>
+
 <style scoped>
 @import "assets/pages/section-main.css";
-
 /*  sec chooose */
 @import "assets/pages/choosing-kayan.css";
+
+.round-sec {
+    background: linear-gradient(270deg, #fdecf8, #edf8fd);
+}
+
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.img-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.img-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Borders colors for each image */
+.color-1 {
+    background: conic-gradient(#00bfff 0% 25%, #00ffff 25% 50%, #0077ff 50% 75%, #00ffaa 75% 100%);
+    /* border-width: ; */
+}
+
+.color-2 {
+    background: conic-gradient(#ff7f50 0% 25%, #ff4500 25% 50%, #ff6347 50% 75%, #ffa07a 75% 100%);
+    /* border-width: ; */
+}
+
+.color-3 {
+    background: conic-gradient(#7b68ee 0% 25%, #6a5acd 25% 50%, #9370db 50% 75%, #8a2be2 75% 100%);
+    /* border-width: ; */
+}
+
+.color-4 {
+    background: conic-gradient(#32cd32 0% 25%, #00ff00 25% 50%, #228b22 50% 75%, #7fff00 75% 100%);
+    /* border-width: ; */
+}
+
+.color-5 {
+    background: conic-gradient(#ff69b4 0% 25%, #ff1493 25% 50%, #ffb6c1 50% 75%, #ff00ff 75% 100%);
+    /* border-width: ; */
+}
+
+.color-6 {
+    background: conic-gradient(#ffa500 0% 25%, #ff8c00 25% 50%, #ffd700 50% 75%, #ff4500 75% 100%);
+}
+.wave-rotate{
+    position: relative;
+    transform: rotate(180deg);
+}
 </style>
