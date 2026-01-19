@@ -1,5 +1,7 @@
 <template>
-    <div class="header p-3">
+    <div class="header p-3" :class="{
+        'bg-white': scrolled,
+    }">
         <div class="container">
             <div class="row justify-content-between align-items-center ">
                 <div class="col-lg-3 hide-media">
@@ -47,6 +49,35 @@
         </div>
     </div>
 </template>
+<script setup>
+const showHeader = ref(true);
+const scrolled = ref(false);
+let lastScrollY = 0;
+
+const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        showHeader.value = false;
+    } else {
+        showHeader.value = true;
+    }
+
+    scrolled.value = currentScrollY > 0;
+
+    lastScrollY = currentScrollY;
+};
+
+onMounted(() => {
+    lastScrollY = window.scrollY;
+    scrolled.value = window.scrollY > 0;
+    window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+    window.removeEventListener("scroll", handleScroll);
+});
+</script>
 <style scoped>
 .header {
     position: fixed;
@@ -54,7 +85,9 @@
     left: 0;
     width: 100%;
     z-index: 10;
+    /* box-shadow: 0px 5px 90px rgba(0, 0, 0, 0.1); */
 }
+
 
 a {
     text-decoration: none;

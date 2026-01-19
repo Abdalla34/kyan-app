@@ -148,12 +148,107 @@
                 <waveDown />
             </div>
         </div>
+        <!-- section download -->
+        <div class="download margin-top-section">
+            <div class="container">
+                <div class="row gap-media align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="img" src="/app.webp" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="mini-title-sec mb-4 text-end">
+                            <h5> حمل تطبيق كيان</h5>
+                            <h1 class="title">
+                                تابع يوميات <span class="span-title">بطلك الصغير</span>
+                            </h1>
+                            <p class="paragraph-sec mt-5">تطبيقنا يجعلك قريباً من طفلك دائماً. صور، تقارير يومية،
+                                ومتابعة
+                                فورية للوجبات والأنشطة بلمسة واحدة.</p>
+                        </div>
+                        <div class="apps d-flex align-items-center justify-content-end gap-2 ">
+                            <div class="google">
+                                <img class="img" src="/google-app.png" alt="">
+                            </div>
+                            <div class="apple">
+                                <img class="img" src="/apple-app.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-width text-center mt-4">
+                        <lineIcon />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sec gallery -->
+        <!-- sec gallery -->
+        <div class="gallery py-5 position-relative">
+            <div class="container">
+                <div
+                    class="title-sec mb-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center text-center text-md-start">
+                    <div class="btn">
+                        <Btn text="عرض المزيد من الصور" />
+                    </div>
+
+                    <div class="note paragraph-sec mb-2 mb-md-0">
+                        نشارككم أجمل اللحظات التي يعيشها الأطفال داخل أركان كيان التعليمية والترفيهية.
+                    </div>
+                    
+                    <div class="moments mb-2 mb-md-0">
+                        <div class="title  fw-bold">
+                            لحظات <span class="span-title">من كيان</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row g-3 justify-content-center align-items-center">
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="card border-0 shadow-sm">
+                            <img src="/img-3.webp" class="card-img-top rounded" alt="kids 3">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="card border-0 shadow-sm">
+                            <img src="/img-2.webp" class="card-img-top rounded" alt="kids 2">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card border-0 shadow-sm">
+                            <img src="/img-1.webp" class="card-img-top rounded" alt="kids 1">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card border-0 shadow-sm">
+                            <img src="/img-6.webp" class="card-img-top rounded" alt="kids 6">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card border-0 shadow-sm">
+                            <img src="/img-5.webp" class="card-img-top rounded" alt="kids 5">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card border-0 shadow-sm">
+                            <img src="/img-4.webp" class="card-img-top rounded" alt="kids 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
+
 <script setup>
 import Swiper from 'swiper/bundle'
 import 'swiper/css'
 import 'swiper/css/navigation'
+import LineIcon from '~/components/icons/lineIcon.vue'
 import Wave from '~/components/icons/wave.vue'
 import WaveDown from '~/components/icons/waveDown.vue'
 import WaveUp from '~/components/icons/waveUp.vue'
@@ -186,75 +281,28 @@ onMounted(() => {
         },
     })
 })
-
 </script>
 
 <style scoped>
 @import "assets/pages/section-main.css";
 /*  sec chooose */
 @import "assets/pages/choosing-kayan.css";
+/*  sec round */
+@import "assets/pages/round-sec.css";
 
-.round-sec {
-    background: linear-gradient(270deg, #fdecf8, #edf8fd);
+/* /////////// */
+.apps .google .img,
+.apple .img {
+    width: 150px !important;
 }
 
-.swiper {
-    width: 100%;
-    padding: 20px 0;
-}
+@media(max-width:768px) {
+    .gap-media {
+        gap: 10px;
+    }
 
-.swiper-slide img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.img-circle {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin: auto;
-}
-
-.img-circle img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Borders colors for each image */
-.color-1 {
-    background: conic-gradient(#00bfff 0% 25%, #00ffff 25% 50%, #0077ff 50% 75%, #00ffaa 75% 100%);
-    /* border-width: ; */
-}
-
-.color-2 {
-    background: conic-gradient(#ff7f50 0% 25%, #ff4500 25% 50%, #ff6347 50% 75%, #ffa07a 75% 100%);
-    /* border-width: ; */
-}
-
-.color-3 {
-    background: conic-gradient(#7b68ee 0% 25%, #6a5acd 25% 50%, #9370db 50% 75%, #8a2be2 75% 100%);
-    /* border-width: ; */
-}
-
-.color-4 {
-    background: conic-gradient(#32cd32 0% 25%, #00ff00 25% 50%, #228b22 50% 75%, #7fff00 75% 100%);
-    /* border-width: ; */
-}
-
-.color-5 {
-    background: conic-gradient(#ff69b4 0% 25%, #ff1493 25% 50%, #ffb6c1 50% 75%, #ff00ff 75% 100%);
-    /* border-width: ; */
-}
-
-.color-6 {
-    background: conic-gradient(#ffa500 0% 25%, #ff8c00 25% 50%, #ffd700 50% 75%, #ff4500 75% 100%);
-}
-.wave-rotate{
-    position: relative;
-    transform: rotate(180deg);
+    .col-width {
+        margin-top: 0px !important;
+    }
 }
 </style>
