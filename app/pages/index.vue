@@ -3,7 +3,7 @@
         <!-- image sec -->
         <div class="section-one position-relative d-flex align-items-center">
             <div class="container">
-                <div class="row p-4 align-items-center">
+                <div class="row row-top p-4 align-items-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="image animation-top">
                             <img src="/hero-left.webp" alt="">
@@ -15,7 +15,7 @@
                                 <h4>مركز كيان المستقبل لضيافة الأطفال</h4>
                                 <h1 class="title fw-bold">خطوة بخطوة نأسس له <span class="span-title">مستقبل مشرق</span>
                                 </h1>
-                                <p class="paragraph-sec w-75">نساعد طفلك على اكتشاف مهاراته وتطوير قدراته في بيئة آمنة
+                                <p class="paragraph-sec ">نساعد طفلك على اكتشاف مهاراته وتطوير قدراته في بيئة آمنة
                                     ومحفزة، لنصنع معاً جيلاً مبدعاً وواثقاً.</p>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                             المتعة والتعلم والأمان
                         </p>
                         <div class="Arrow">
-                            <Arrow />
+                            <IconsArrow />
                         </div>
                     </div>
 
@@ -86,7 +86,7 @@
             </div>
         </div>
         <!-- round section in center -->
-        <div class="round-sec mb-5 ">
+        <div class="round-sec bg-color-section mb-5 ">
             <WaveUp />
             <div class="container p-5">
                 <div class="mini-title-sec mb-4 text-center">
@@ -193,7 +193,7 @@
                     <div class="note paragraph-sec mb-2 mb-md-0">
                         نشارككم أجمل اللحظات التي يعيشها الأطفال داخل أركان كيان التعليمية والترفيهية.
                     </div>
-                    
+
                     <div class="moments mb-2 mb-md-0">
                         <div class="title  fw-bold">
                             لحظات <span class="span-title">من كيان</span>
@@ -241,6 +241,8 @@
                 </div>
             </div>
         </div>
+        <!-- section contact -->
+        <contact />
     </div>
 </template>
 

@@ -5,7 +5,9 @@
     /* min-height: calc(90vh - 80px); */
     /* min-height: 100vh; */
 }
-
+.row-top{
+    margin-top: 76px;
+}
 .image img {
     max-width: 100%;
 }

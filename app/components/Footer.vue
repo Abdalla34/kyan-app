@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-light pt-5">
+  <footer class=" pt-5 margin-top-section ">
     <div class="container">
       <div class="row text-end">
         <!-- تابع يوميات طفلك -->
@@ -94,22 +94,5 @@ footer {
   color: #0d6efd;
 }
 
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: #eaf6ff;
-  color: #0d6efd;
-  border-radius: 50%;
-  margin-left: 8px;
-  text-decoration: none;
-  font-size: 18px;
-}
 
-.social-icon:hover {
-  background: #0d6efd;
-  color: #fff;
-}
 </style>
