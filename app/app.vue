@@ -3,5 +3,7 @@
     <UpHeader />
     <Header />
     <NuxtPage />
+    <contact/>
+    <Footer/>
   </div>
 </template>
