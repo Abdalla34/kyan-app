@@ -90,9 +90,9 @@
             <WaveUp />
             <div class="container p-5">
                 <div class="mini-title-sec mb-4 text-center">
-                    <h5>لماذا تختار كيان؟</h5>
-                    <h1 class="title">
-                        أركان تعليمية أركان تعليمية <span class="span-title">متطورة</span>
+                    <h5>جولة داخل المركز</h5>
+                    <h1 class="title color-special">
+                        أركان تعليمية <span class="span-title">متطورة</span>
                     </h1>
                 </div>
                 <div class="row">
@@ -100,37 +100,37 @@
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide">
-                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-1">
+                                <div class="img-circle p-2 d-flex align-items-center justify-content-center color-1">
                                     <img src="/arts-corner.webp" alt="">
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-2">
+                                <div class="img-circle p-2 d-flex align-items-center justify-content-center color-2">
                                     <img src="/cooking-corner.webp" alt="">
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-3">
+                                <div class="img-circle p-2 d-flex align-items-center justify-content-center color-3">
                                     <img src="/corner-theater.webp" alt="">
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-4">
+                                <div class="img-circle p-2 d-flex align-items-center justify-content-center color-4">
                                     <img src="/learning-corner.webp" alt="">
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-5">
+                                <div class="img-circle p-2 d-flex align-items-center justify-content-center color-5">
                                     <img src="/ports-club.webp" alt="">
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="img-circle p-1 d-flex align-items-center justify-content-center color-6">
+                                <div class="img-circle p-2 d-flex align-items-center justify-content-center color-6">
                                     <img src="/skills-corner.webp" alt="">
                                 </div>
                             </div>
@@ -181,7 +181,6 @@
             </div>
         </div>
         <!-- sec gallery -->
-        <!-- sec gallery -->
         <div class="gallery py-5 position-relative">
             <div class="container">
                 <div
@@ -211,19 +210,19 @@
 
                     <div class="col-lg-5 col-md-6 col-sm-12">
                         <div class="card border-0 shadow-sm">
-                            <img src="/img-2.webp" class="card-img-top rounded" alt="kids 2">
+                            <img src="/img-2.webp" class="card-img-top rounded-4 max-250" alt="kids 2">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card border-0 shadow-sm">
-                            <img src="/img-1.webp" class="card-img-top rounded" alt="kids 1">
+                            <img src="/img-1.webp" class="card-img-top rounded-4 max-200" alt="kids 1">
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card border-0 shadow-sm">
-                            <img src="/img-6.webp" class="card-img-top rounded" alt="kids 6">
+                            <img src="/img-6.webp" class="card-img-top rounded-4 max-220" alt="kids 6">
                         </div>
                     </div>
 
@@ -291,6 +290,14 @@ onMounted(() => {
 @import "assets/pages/choosing-kayan.css";
 /*  sec round */
 @import "assets/pages/round-sec.css";
+
+.max-200 {
+    max-height: 280px;
+}
+
+.max-200 {
+    max-height: 200px;
+}
 
 /* /////////// */
 .apps .google .img,

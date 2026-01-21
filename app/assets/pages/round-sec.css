@@ -1,5 +1,4 @@
 
-
 .swiper {
     width: 100%;
     padding: 20px 0;
@@ -12,51 +11,3 @@
     border-radius: 12px;
 }
 
-.img-circle {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin: auto;
-}
-
-.img-circle img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Borders colors for each image */
-.color-1 {
-    background: conic-gradient(#00bfff 0% 25%, #00ffff 25% 50%, #0077ff 50% 75%, #00ffaa 75% 100%);
-    /* border-width: ; */
-}
-
-.color-2 {
-    background: conic-gradient(#ff7f50 0% 25%, #ff4500 25% 50%, #ff6347 50% 75%, #ffa07a 75% 100%);
-    /* border-width: ; */
-}
-
-.color-3 {
-    background: conic-gradient(#7b68ee 0% 25%, #6a5acd 25% 50%, #9370db 50% 75%, #8a2be2 75% 100%);
-    /* border-width: ; */
-}
-
-.color-4 {
-    background: conic-gradient(#32cd32 0% 25%, #00ff00 25% 50%, #228b22 50% 75%, #7fff00 75% 100%);
-    /* border-width: ; */
-}
-
-.color-5 {
-    background: conic-gradient(#ff69b4 0% 25%, #ff1493 25% 50%, #ffb6c1 50% 75%, #ff00ff 75% 100%);
-    /* border-width: ; */
-}
-
-.color-6 {
-    background: conic-gradient(#ffa500 0% 25%, #ff8c00 25% 50%, #ffd700 50% 75%, #ff4500 75% 100%);
-}
-
-/* .wave-rotate {
-    position: relative;
-    transform: rotate(180deg);
-} */

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import WaveDown from './icons/waveDown.vue';
 import WaveUp from './icons/waveUp.vue';
-import IconsArrowBg from './icons/ArrowBg.vue';
+import ArrowBg from './icons/ArrowBg.vue';
 
 </script>
 
@@ -80,7 +80,7 @@ import IconsArrowBg from './icons/ArrowBg.vue';
             <p class="fs-5 text-end">انضمي إلى عائلة كيان المستقبل ودعي طفلك يستمتع بتجربة فنية فريدة</p>
           </div>
           <div class="md-none">
-            <IconsArrowBg />
+            <ArrowBg />
           </div>
         </div>
       </div>

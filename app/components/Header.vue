@@ -25,10 +25,10 @@
                                 <NuxtLink to="/about" exact-active-class="active">عن كيان</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/center-pillars" exact-active-class="active">أركان المركز</NuxtLink>
+                                <NuxtLink to="/services" exact-active-class="active">أركان المركز</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/galley" exact-active-class="active">معرض الصور</NuxtLink>
+                                <NuxtLink to="/gallery" exact-active-class="active">معرض الصور</NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink to="/news" exact-active-class="active">جديدنا</NuxtLink>
