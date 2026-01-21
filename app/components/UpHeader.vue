@@ -1,7 +1,7 @@
 <template>
     <div class="up-header">
         <div class="container p-2">
-            <div class="row text-white justify-content-around align-items-center">
+            <div class="row text-white justify-content-center align-items-center">
                 <div class="col-lg-3 d-flex align-items-center gap-3 justify-content-center">
                     <div class="box">
                         <div class="icon"></div>
@@ -25,7 +25,7 @@
     border-bottom-right-radius: 40px;
     position: relative;
     z-index: 1000;
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-bottom: 40px;
 }

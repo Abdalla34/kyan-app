@@ -122,5 +122,9 @@ a:hover {
     .media-mobile {
         justify-content: space-between !important;
     }
+    .header {
+    top: 0 !important;
+    box-shadow: 0px 10px 30px rgb(0,0,0, 0.1);
+}
 }
 </style>
