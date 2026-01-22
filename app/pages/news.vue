@@ -174,10 +174,6 @@ definePageMeta({
 
 <style scoped>
 @import "assets/pages/new.css";
-
-/* services 2 */
-
-
 .btn-link {
     background-color: #128c7e;
     color: white;

@@ -45,27 +45,27 @@
           <li class="link">
             <nuxt-link
               @click="closeMenu"
-              to="/our-services"
+              to="/services"
               active-class="active"
               class="text-black a fs-6 fw-bold text-capitalize"
             >
-              خدماتنا</nuxt-link
+              اركان المركز</nuxt-link
             >
           </li>
           <li class="link">
             <nuxt-link
               @click="closeMenu"
-              to="/our-projects"
+              to="/gallery"
               active-class="active"
               class="text-black a fs-6 fw-bold text-capitalize"
             >
-              مشاريعنا</nuxt-link
+              معرض الصور</nuxt-link
             >
           </li>
           <li class="link">
             <nuxt-link
               @click="closeMenu"
-              to="/blog"
+              to="/blogs"
               active-class="active"
               class="text-black a fs-6 fw-bold text-capitalize"
             >
@@ -75,7 +75,7 @@
           <li class="link">
             <nuxt-link
               @click="closeMenu"
-              to="/contact-us"
+              to="/contact"
               active-class="active"
               class="text-black a fs-6 fw-bold text-capitalize"
             >
@@ -153,6 +153,7 @@
   }
   .a {
     text-align: end;
+    text-decoration: none;
   }
   .close-btn {
     font-size: 2rem;

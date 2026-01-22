@@ -3,6 +3,12 @@
     <UpHeader />
     <Header />
     <NuxtPage />
-    <Footer/>
+    <Bar />
+    <Footer />
   </div>
 </template>
+<style>
+/* body{
+    direction: rtl;
+  } */
+</style>

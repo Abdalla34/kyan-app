@@ -98,7 +98,7 @@ onBeforeUnmount(() => {
 a {
     text-decoration: none;
     color: rgb(17 24 39 / var(--tw-text-opacity, 1));
-    font-weight: 800;
+    font-weight: bold;
     font-size: 16px;
 }
 
