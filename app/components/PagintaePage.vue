@@ -19,7 +19,7 @@
   
   <style scoped>
   .parent {
-    background-color: rgb(243 245 247 / 1);
+    background-color: #f9fbfb;
   }
   .title-home{
     text-decoration: none;

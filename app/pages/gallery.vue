@@ -1,7 +1,18 @@
 <template>
     <div class="kids-gallery mt-5 py-5">
+        <PagintaePage />
+
+        <div class="d-flex mt-3 align-items-center justify-content-center">
+            <div class="mini-title-sec text-center">
+                <h5> معرض الصور</h5>
+                <h1 class="title">
+                    لحظات من <span class="span-title">كيان المستقبل</span>
+                </h1>
+
+            </div>
+        </div>
         <!-- filtter -->
-        <div class="d-flex gap-2 mb-4 btns overflow-auto">
+        <div class="d-flex mt-4 gap-2 mb-4 btns overflow-auto">
             <button v-for="cat in categories" :key="cat" @click="selectCategory(cat)"
                 :class="[selectedCategory === cat ? 'activeBtn' : 'noActive']">
                 {{ cat }}
@@ -24,7 +35,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div v-if="selectedImage" class="lightbox" @click="selectedImage = null">
             <img :src="selectedImage" class="lightbox-img" />
         </div>
@@ -35,6 +46,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+    title: "معرض الصور"
+})
 const categories = ['المرافق', 'الفعاليات', 'الفنون', 'الأنشطة', 'الكل']
 const images = [
     { id: 1, src: '/img-1.webp', alt: 'kids 1', category: 'الأنشطة' },
