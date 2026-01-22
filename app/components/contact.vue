@@ -64,7 +64,7 @@ import ArrowBg from './icons/ArrowBg.vue';
               <!-- زر الإرسال -->
               <div class="text-center">
                 <button type="submit" class="btn btn-lg w-100 text-white btn-hover  rounded-pill"
-                  style="background: linear-gradient(135deg, #cc1fa5, #7f1469)" ;>
+                  style="background: linear-gradient(135deg, #cc1fa5, #7f1469)">
                   سجلي الأن
                 </button>
               </div>
