@@ -1,0 +1,93 @@
+.box-new {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p-design {
+    color: #6b7280;
+    width: 80%;
+}
+
+.btn-design {
+    outline: none;
+    border: none;
+}
+
+/* table */
+.table {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.table thead.table-head th {
+    background-color: var(--main-color) !important;
+    color: #fff;
+    padding: 15px;
+}
+
+.table td,
+.table th {
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.table tbody tr {
+    height: 70px;
+}
+
+/* services */
+.serv-num {
+    background-color: #cff0ff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+}
+
+.text-color {
+    color: #87076c;
+}
+
+.color-bg {
+    background-color: #ee3fc8;
+}
+
+.hover {
+    transition: all ease-in-out 0.3s;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.2);
+}
+
+.box-serv {
+    background-color: #e4f1f7;
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width:768px) {
+    .w-mobile {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+
+    .box-serv {
+        width: 100%;
+    }
+    .mini-box .title ,.box-new .p-design{
+        font-size: 15px !important;
+    }
+
+    .btn-contact {
+        width: 90%;
+        margin: auto;
+    }
+    .btn-contact a {
+
+        font-size: 13px !important;
+    }
+}
